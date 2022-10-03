@@ -1,4 +1,5 @@
 void main() {
+
   final List<String> listOfCar = ["Audi", "BMW", "Ferrari", "Mercedes"];
   final Map<String, dynamic> mapOfNumbers = {"0": "Zero", "1": "One", "2": "Two", "3": "Three"};
 
@@ -108,7 +109,7 @@ void main() {
   //where method ....
   print('Where ===>>> ${listOfCar.where((element)=> element.length > 4)}');
 
-//whereType method....
+  //whereType method....
   var mixList = [1, "a", 2, "b", 3, "c", 4, "d"];
   var num = mixList.whereType<int>();
   print('WhereType ===>>> ${num}');
