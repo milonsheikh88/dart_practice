@@ -114,4 +114,20 @@ void main() {
   var num = mixList.whereType<int>();
   print('WhereType ===>>> ${num}');
 
+  List<int> listSet = <int>[];
+  listSet.add(100);
+  listSet.add(20);
+  listSet.add(5);
+  listSet.add(60);
+  listSet.add(70);
+  print("List Default implementation :$listSet");
+
+  Set<int> numberSet = <int>{};
+  numberSet.add(100);
+  numberSet.add(20);
+  numberSet.add(5);
+  numberSet.add(60);
+  numberSet.add(70);
+  print("Set Default implementation :$numberSet");
+
 }
