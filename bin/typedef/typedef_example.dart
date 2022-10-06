@@ -1,17 +1,17 @@
 
 typedef MultiOperation(int firstNo , int secondNo); //typedef function signature
 
-Add(int firstNo,int second){
+add(int firstNo,int second){
   print("Add result is ${firstNo+second}");
 }
-Subtract(int firstNo,int second){
+subtract(int firstNo,int second){
   print("Subtract result is ${firstNo-second}");
 }
-Divide(int firstNo,int second){
+divide(int firstNo,int second){
   print("Divide result is ${firstNo/second}");
 }
 
-Calculator(int a,int b ,MultiOperation operation){
+calculator(int a,int b ,MultiOperation operation){
   print("==================== Inside calculator ======================");
   operation(a,b);
 }
@@ -19,16 +19,16 @@ Calculator(int a,int b ,MultiOperation operation){
 void main(){
   MultiOperation multiOperation;
 
-  multiOperation=Add;
+  multiOperation=add;
   multiOperation(30,20);
 
-  multiOperation=Subtract;
+  multiOperation=subtract;
   multiOperation(30,20);
 
-  multiOperation=Divide;
+  multiOperation=divide;
   multiOperation(30,20);
 
-  Calculator(50,10,Add);
-  Calculator(50,10,Subtract);
-  Calculator(50,10,Divide);
+  calculator(50,10,add);
+  calculator(50,10,subtract);
+  calculator(50,10,divide);
 }
