@@ -28,7 +28,6 @@ Stream<int> countDownFrom(int n) async* {
     yield n;
     await Future.delayed(Duration(milliseconds: 200));
     yield* countDownFrom(n - 1);
-
   }
 }
 
@@ -42,7 +41,6 @@ void main() {
 
   // print("----------------------------");
   // genIterates(20).forEach((v) => print(v));
-
 
   print("----------------------------");
   countDownFrom(20).forEach(print);
